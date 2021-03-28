@@ -11,24 +11,29 @@ html {
 
 header {
     top: 0;
-    display: flex;
+    left: 0;
+    display: block;
     position: fixed;
-    width: 100%;
+    width: 98.5vw;
     height: 14%;
-    background: #141414;
+    background: linear-gradient(black, #141414);
+    z-index: 2;
     #logo {
         position: absolute;
         vertical-align: middle;
         margin-right: 5px;
-        padding-top: 1.5%;
-        left: 2%;
+        top: 15%;
+        left: 3%;
         display: inline-block;
-        max-width: 5em;
+        max-width: 6.5em;
         width: 90%;
         height: auto;
     }
     #nav-bar-1 {
-        left: 9%;
+        width: 100vw;
+        top: 3%;
+        left: 14vw;
+        font-weight: bolder;
         position: absolute;
         align-self: flex-start;
         display: inline-block;
@@ -36,7 +41,7 @@ header {
         justify-content: space-between;
     }
     .icon-top-bar {
-        font-size: 0.7em;
+        font-size: 0.9em;
         background: transparent;
         color: #fff;
         text-decoration: none;
@@ -47,25 +52,73 @@ header {
     }
     #nav-bar-2 {
         position: absolute;
-        right: 4%;
+        right: 3%;
         justify-content: flex-end;
         align-items: center;
         justify-content: space-between;
         ul {
             li {
                 display: inline-block;
+                margin: auto;
                 button {
                     background-color: transparent;
                     border: none;
                     img {
-                        width: 1em;
-                        height: auto;
-                    }
-                    #imgPerfil {
                         width: 1.5em;
                         height: auto;
                     }
+                    #imgPerfil {
+                        width: 1.8em;
+                        height: auto;
+                    }
                 }
+            }
+        }
+    }
+}
+
+@media(max-width: 1248px) {
+    header {
+        width: 100vw;
+    }
+}
+
+@media(max-width: 770px) {
+    header {
+        width: 100vw;
+        #nav-bar-1 {
+            left: 20vw;
+        }
+    }
+}
+
+@media (max-width:550px) {
+    header {
+        width: 100%;
+        #nav-bar-1 {
+            top: 50%;
+            left: auto;
+            margin-left: 8%;
+            right: auto;
+            width: 500px;
+            .icon-top-bar {
+                padding: 0.1em 1.5em;
+            }
+        }
+    }
+}
+
+@media(max-width:403px) {
+    header {
+        width: 100%;
+        #nav-bar-1 {
+            top: 50%;
+            left: auto;
+            margin-left: -2%;
+            right: auto;
+            width: 500px;
+            .icon-top-bar {
+                padding: 0.1em 1.5em;
             }
         }
     }

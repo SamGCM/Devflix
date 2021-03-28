@@ -11,29 +11,33 @@ html {
 
 header {
   top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  left: 0;
+  display: block;
   position: fixed;
-  width: 100%;
+  width: 98.5vw;
   height: 14%;
-  background: #141414;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(#141414));
+  background: linear-gradient(black, #141414);
+  z-index: 2;
 }
 
 header #logo {
   position: absolute;
   vertical-align: middle;
   margin-right: 5px;
-  padding-top: 1.5%;
-  left: 2%;
+  top: 15%;
+  left: 3%;
   display: inline-block;
-  max-width: 5em;
+  max-width: 6.5em;
   width: 90%;
   height: auto;
 }
 
 header #nav-bar-1 {
-  left: 9%;
+  width: 100vw;
+  top: 3%;
+  left: 14vw;
+  font-weight: bolder;
   position: absolute;
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -47,7 +51,7 @@ header #nav-bar-1 {
 }
 
 header .icon-top-bar {
-  font-size: 0.7em;
+  font-size: 0.9em;
   background: transparent;
   color: #fff;
   text-decoration: none;
@@ -60,7 +64,7 @@ header .icon-top-bar:hover {
 
 header #nav-bar-2 {
   position: absolute;
-  right: 4%;
+  right: 3%;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -74,6 +78,7 @@ header #nav-bar-2 {
 
 header #nav-bar-2 ul li {
   display: inline-block;
+  margin: auto;
 }
 
 header #nav-bar-2 ul li button {
@@ -82,64 +87,114 @@ header #nav-bar-2 ul li button {
 }
 
 header #nav-bar-2 ul li button img {
-  width: 1em;
+  width: 1.5em;
   height: auto;
 }
 
 header #nav-bar-2 ul li button #imgPerfil {
-  width: 1.5em;
+  width: 1.8em;
   height: auto;
+}
+
+@media (max-width: 1248px) {
+  header {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 770px) {
+  header {
+    width: 100vw;
+  }
+  header #nav-bar-1 {
+    left: 20vw;
+  }
+}
+
+@media (max-width: 550px) {
+  header {
+    width: 100%;
+  }
+  header #nav-bar-1 {
+    top: 50%;
+    left: auto;
+    margin-left: 8%;
+    right: auto;
+    width: 500px;
+  }
+  header #nav-bar-1 .icon-top-bar {
+    padding: 0.1em 1.5em;
+  }
+}
+
+@media (max-width: 403px) {
+  header {
+    width: 100%;
+  }
+  header #nav-bar-1 {
+    top: 50%;
+    left: auto;
+    margin-left: -2%;
+    right: auto;
+    width: 500px;
+  }
+  header #nav-bar-1 .icon-top-bar {
+    padding: 0.1em 1.5em;
+  }
 }
 
 .container-1 {
   top: 20%;
   position: relative;
-  display: block;
-  z-index: 1;
-  max-width: 100vw;
+  display: inline-block;
+  width: 95%;
+  height: auto;
+  left: 0;
 }
 
 .container-1 h2 {
+  position: relative;
   display: block;
+  width: 50vw;
+  padding: 5px;
+  margin-left: 2vw;
+}
+
+.container-1 h2 span {
+  margin: auto;
+  width: 90%;
   font-size: 0.8em;
   font-weight: bold;
-  -webkit-margin-before: 0.83em;
-          margin-block-start: 0.83em;
-  -webkit-margin-after: 0.83em;
-          margin-block-end: 0.83em;
-  -webkit-margin-start: 2.5%;
-          margin-inline-start: 2.5%;
-  -webkit-margin-end: 0px;
-          margin-inline-end: 0px;
 }
 
 .container-1 .slider-1 {
   display: inline-block;
+  margin-left: -1.5vw;
 }
 
 .container-1 .slider-1 ul {
-  top: 10%;
-  width: 90%;
-  max-width: 500px;
+  max-width: 100vw;
+  width: 95%;
   margin: auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(130px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  -ms-grid-columns: (minmax(200px, 3fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
   -webkit-column-gap: 5px;
           column-gap: 5px;
   row-gap: 1em;
 }
 
 .container-1 .slider-1 ul a {
-  max-width: 160px;
+  max-width: 250px;
   width: 100%;
 }
 
 .container-1 .slider-1 ul a img {
-  max-width: 150px;
+  max-width: 250px;
   width: 100%;
   height: auto;
+  border-radius: 5px;
 }
 
 .container-1 .slider-1 ul a img:hover {
