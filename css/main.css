@@ -9,60 +9,76 @@ html {
   height: 100%;
 }
 
-header {
-  top: 0;
-  left: 0;
-  display: block;
-  position: fixed;
-  width: 98.5vw;
-  height: 14%;
+.row {
+  margin: 0;
+}
+
+.container {
+  padding: 70px 0;
+}
+
+p,
+li {
+  color: #fff;
+  font-size: 0.9em;
+}
+
+header,
+.navbar {
   background: -webkit-gradient(linear, left top, left bottom, from(black), to(#141414));
   background: linear-gradient(black, #141414);
   z-index: 2;
 }
 
-header #logo {
-  position: absolute;
-  vertical-align: middle;
-  margin-right: 5px;
-  top: 15%;
-  left: 3%;
-  display: inline-block;
-  max-width: 6.5em;
-  width: 90%;
-  height: auto;
+header .container-fluid,
+.navbar .container-fluid {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-header #nav-bar-1 {
-  width: 100vw;
-  top: 3%;
-  left: 14vw;
-  font-weight: bolder;
-  position: absolute;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  display: inline-block;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+header .container-fluid #logo,
+.navbar .container-fluid #logo {
+  width: 75px;
 }
 
-header .icon-top-bar {
-  font-size: 0.9em;
-  background: transparent;
+header .container-fluid #search,
+.navbar .container-fluid #search {
+  width: 0.8em;
+}
+
+header .container-fluid #jingle,
+.navbar .container-fluid #jingle {
+  width: 0.7em;
+}
+
+header .container-fluid #gift,
+.navbar .container-fluid #gift {
+  width: 0.7em;
+}
+
+header .container-fluid #imgProfile,
+.navbar .container-fluid #imgProfile {
+  width: 1em;
+}
+
+header .container-fluid #imgProfile2,
+.navbar .container-fluid #imgProfile2 {
+  width: 1.5em;
+  position: absolute;
+}
+
+header .container-fluid #navbarNav .navbar-nav .nav-link,
+.navbar .container-fluid #navbarNav .navbar-nav .nav-link {
+  font-size: 12px;
   color: #fff;
-  text-decoration: none;
-  padding: 0.1em 0.5em;
 }
 
-header .icon-top-bar:hover {
+header .container-fluid #navbarNav .navbar-nav .nav-link:hover,
+.navbar .container-fluid #navbarNav .navbar-nav .nav-link:hover {
   opacity: 65%;
 }
 
-header #nav-bar-2 {
+#nav-bar-2 {
   position: absolute;
   right: 3%;
   -webkit-box-pack: end;
@@ -76,22 +92,22 @@ header #nav-bar-2 {
           justify-content: space-between;
 }
 
-header #nav-bar-2 ul li {
+#nav-bar-2 ul li {
   display: inline-block;
   margin: auto;
 }
 
-header #nav-bar-2 ul li button {
+#nav-bar-2 ul li button {
   background-color: transparent;
   border: none;
 }
 
-header #nav-bar-2 ul li button img {
+#nav-bar-2 ul li button img {
   width: 1.5em;
   height: auto;
 }
 
-header #nav-bar-2 ul li button #imgPerfil {
+#nav-bar-2 ul li button #imgPerfil {
   width: 1.8em;
   height: auto;
 }
@@ -143,7 +159,7 @@ header #nav-bar-2 ul li button #imgPerfil {
   }
 }
 
-.container-1 {
+.container-fluid {
   top: 20%;
   position: relative;
   display: inline-block;
@@ -152,7 +168,7 @@ header #nav-bar-2 ul li button #imgPerfil {
   left: 0;
 }
 
-.container-1 h2 {
+.container-fluid h2 {
   position: relative;
   display: block;
   width: 50vw;
@@ -160,19 +176,19 @@ header #nav-bar-2 ul li button #imgPerfil {
   margin-left: 2vw;
 }
 
-.container-1 h2 span {
+.container-fluid h2 span {
   margin: auto;
   width: 90%;
   font-size: 0.8em;
   font-weight: bold;
 }
 
-.container-1 .slider-1 {
+.container-fluid .slider-1 {
   display: inline-block;
   margin-left: -1.5vw;
 }
 
-.container-1 .slider-1 ul {
+.container-fluid .slider-1 ul {
   max-width: 100vw;
   width: 95%;
   margin: auto;
@@ -185,19 +201,19 @@ header #nav-bar-2 ul li button #imgPerfil {
   row-gap: 1em;
 }
 
-.container-1 .slider-1 ul a {
+.container-fluid .slider-1 ul a {
   max-width: 250px;
   width: 100%;
 }
 
-.container-1 .slider-1 ul a img {
+.container-fluid .slider-1 ul a img {
   max-width: 250px;
   width: 100%;
   height: auto;
   border-radius: 5px;
 }
 
-.container-1 .slider-1 ul a img:hover {
+.container-fluid .slider-1 ul a img:hover {
   -webkit-transform: scale(1.3, 1.3);
           transform: scale(1.3, 1.3);
 }

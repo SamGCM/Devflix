@@ -9,68 +9,80 @@ html {
     height: 100%;
 }
 
-header {
-    top: 0;
-    left: 0;
-    display: block;
-    position: fixed;
-    width: 98.5vw;
-    height: 14%;
+.row {
+    margin: 0;
+}
+
+.container {
+    padding: 70px 0;
+}
+
+p,
+li {
+    color: #fff;
+    font-size: 0.9em;
+}
+
+header,
+.navbar {
     background: linear-gradient(black, #141414);
     z-index: 2;
-    #logo {
-        position: absolute;
-        vertical-align: middle;
-        margin-right: 5px;
-        top: 15%;
-        left: 3%;
-        display: inline-block;
-        max-width: 6.5em;
-        width: 90%;
-        height: auto;
-    }
-    #nav-bar-1 {
-        width: 100vw;
-        top: 3%;
-        left: 14vw;
-        font-weight: bolder;
-        position: absolute;
-        align-self: flex-start;
-        display: inline-block;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .icon-top-bar {
-        font-size: 0.9em;
-        background: transparent;
-        color: #fff;
-        text-decoration: none;
-        padding: 0.1em 0.5em;
-        &:hover {
-            opacity: 65%;
+    .container-fluid {
+        padding-top: 0;
+        padding-bottom: 0;
+        #logo {
+            width: 75px;
+        }
+        #search {
+            width: 0.8em;
+        }
+        #jingle {
+            width: 0.7em;
+        }
+        #gift {
+            width: 0.7em;
+        }
+        #imgProfile {
+            width: 1em;
+        }
+        #imgProfile2 {
+            width: 1.5em;
+            position: absolute;
+        }
+        #navbarNav {
+            .navbar-nav {
+                .nav-link {
+                    font-size: 12px;
+                    color: #fff;
+                    &:hover {
+                        opacity: 65%;
+                    }
+                }
+            }
         }
     }
-    #nav-bar-2 {
-        position: absolute;
-        right: 3%;
-        justify-content: flex-end;
-        align-items: center;
-        justify-content: space-between;
-        ul {
-            li {
-                display: inline-block;
-                margin: auto;
-                button {
-                    background-color: transparent;
-                    border: none;
-                    img {
-                        width: 1.5em;
-                        height: auto;
-                    }
-                    #imgPerfil {
-                        width: 1.8em;
-                        height: auto;
-                    }
+}
+
+#nav-bar-2 {
+    position: absolute;
+    right: 3%;
+    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    ul {
+        li {
+            display: inline-block;
+            margin: auto;
+            button {
+                background-color: transparent;
+                border: none;
+                img {
+                    width: 1.5em;
+                    height: auto;
+                }
+                #imgPerfil {
+                    width: 1.8em;
+                    height: auto;
                 }
             }
         }
