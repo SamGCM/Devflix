@@ -33,14 +33,17 @@ header,
         #logo {
             width: 75px;
         }
+        .navbar {
+            background: transparent;
+        }
         #search {
-            width: 0.8em;
+            width: 1em;
         }
         #jingle {
-            width: 0.7em;
+            width: 1em;
         }
         #gift {
-            width: 0.7em;
+            width: 1em;
         }
         #imgProfile {
             width: 1em;
@@ -51,6 +54,7 @@ header,
         }
         #navbarNav {
             .navbar-nav {
+                left: 500px;
                 .nav-link {
                     font-size: 12px;
                     color: #fff;
@@ -63,74 +67,21 @@ header,
     }
 }
 
-#nav-bar-2 {
-    position: absolute;
-    right: 3%;
-    justify-content: flex-end;
-    align-items: center;
-    justify-content: space-between;
-    ul {
-        li {
-            display: inline-block;
-            margin: auto;
-            button {
-                background-color: transparent;
-                border: none;
-                img {
-                    width: 1.5em;
-                    height: auto;
-                }
-                #imgPerfil {
-                    width: 1.8em;
-                    height: auto;
-                }
+@media (min-width: 768px) and (max-width: 991.98px) {
+    header,
+    .navbar {
+        .container-fluid {
+            .navbar-nav {
+                margin-left: -35vw;
             }
-        }
-    }
-}
-
-@media(max-width: 1248px) {
-    header {
-        width: 100vw;
-    }
-}
-
-@media(max-width: 770px) {
-    header {
-        width: 100vw;
-        #nav-bar-1 {
-            left: 20vw;
-        }
-    }
-}
-
-@media (max-width:550px) {
-    header {
-        width: 100%;
-        #nav-bar-1 {
-            top: 50%;
-            left: auto;
-            margin-left: 8%;
-            right: auto;
-            width: 500px;
-            .icon-top-bar {
-                padding: 0.1em 1.5em;
+            #search {
+                width: 0.7em;
             }
-        }
-    }
-}
-
-@media(max-width:403px) {
-    header {
-        width: 100%;
-        #nav-bar-1 {
-            top: 50%;
-            left: auto;
-            margin-left: -2%;
-            right: auto;
-            width: 500px;
-            .icon-top-bar {
-                padding: 0.1em 1.5em;
+            #jingle {
+                width: 0.7em;
+            }
+            #gift {
+                width: 0.7em;
             }
         }
     }
