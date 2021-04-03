@@ -20,7 +20,7 @@ html {
 p,
 li {
     color: #fff;
-    font-size: 0.9em;
+    font-size: 2em;
 }
 
 header,
@@ -54,7 +54,7 @@ header,
         }
         #navbarNav {
             .navbar-nav {
-                left: 500px;
+                margin-left: -35vw;
                 .nav-link {
                     font-size: 12px;
                     color: #fff;
