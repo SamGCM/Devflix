@@ -20,7 +20,7 @@ html {
 p,
 li {
   color: #fff;
-  font-size: 0.9em;
+  font-size: 2em;
 }
 
 header,
@@ -74,7 +74,7 @@ header .container-fluid #imgProfile2,
 
 header .container-fluid #navbarNav .navbar-nav,
 .navbar .container-fluid #navbarNav .navbar-nav {
-  left: 500px;
+  margin-left: -35vw;
 }
 
 header .container-fluid #navbarNav .navbar-nav .nav-link,
