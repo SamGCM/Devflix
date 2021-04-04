@@ -1,6 +1,6 @@
 body,
 html {
-  font-size: 99.5%;
+  font-size: 1.2em;
   line-height: 1.2;
   color: #fff;
   font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -23,6 +23,10 @@ li {
   font-size: 2em;
 }
 
+h2 {
+  font-size: 5em;
+}
+
 header,
 .navbar {
   background: -webkit-gradient(linear, left top, left bottom, from(black), to(#141414));
@@ -38,7 +42,7 @@ header .container-fluid,
 
 header .container-fluid #logo,
 .navbar .container-fluid #logo {
-  width: 75px;
+  width: 4em;
 }
 
 header .container-fluid .navbar,
@@ -48,22 +52,22 @@ header .container-fluid .navbar,
 
 header .container-fluid #search,
 .navbar .container-fluid #search {
-  width: 1em;
+  width: 1.3em;
 }
 
 header .container-fluid #jingle,
 .navbar .container-fluid #jingle {
-  width: 1em;
+  width: 1.3em;
 }
 
 header .container-fluid #gift,
 .navbar .container-fluid #gift {
-  width: 1em;
+  width: 1.3em;
 }
 
 header .container-fluid #imgProfile,
 .navbar .container-fluid #imgProfile {
-  width: 1em;
+  width: 1.6em;
 }
 
 header .container-fluid #imgProfile2,
@@ -79,7 +83,7 @@ header .container-fluid #navbarNav .navbar-nav,
 
 header .container-fluid #navbarNav .navbar-nav .nav-link,
 .navbar .container-fluid #navbarNav .navbar-nav .nav-link {
-  font-size: 12px;
+  font-size: 0.35em;
   color: #fff;
 }
 
@@ -88,50 +92,77 @@ header .container-fluid #navbarNav .navbar-nav .nav-link:hover,
   opacity: 65%;
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
-  header .container-fluid .navbar-nav,
-  .navbar .container-fluid .navbar-nav {
-    margin-left: -35vw;
+@media (max-width: 575.98px) {
+  header .container-fluid #logo,
+  .navbar .container-fluid #logo {
+    width: 3em;
+  }
+  header .container-fluid #imgProfile2,
+  .navbar .container-fluid #imgProfile2 {
+    width: 1.3em;
+    position: absolute;
   }
   header .container-fluid #search,
   .navbar .container-fluid #search {
-    width: 0.7em;
-  }
-  header .container-fluid #jingle,
-  .navbar .container-fluid #jingle {
-    width: 0.7em;
-  }
-  header .container-fluid #gift,
-  .navbar .container-fluid #gift {
-    width: 0.7em;
+    width: 1em;
   }
 }
 
-#slider-1 #carouselExampleControls .carousel-control-prev {
+@media (min-width: 1200px) {
+  header .container-fluid #navbarNav .navbar-nav,
+  .navbar .container-fluid #navbarNav .navbar-nav {
+    margin-left: -40vw;
+  }
+  header .container-fluid #search,
+  .navbar .container-fluid #search {
+    width: 1.1em;
+  }
+  header .container-fluid #jingle,
+  .navbar .container-fluid #jingle {
+    width: 1.1;
+  }
+  header .container-fluid #gift,
+  .navbar .container-fluid #gift {
+    width: 1.1;
+  }
+  header .container-fluid #imgProfile,
+  .navbar .container-fluid #imgProfile {
+    width: 1.6em;
+  }
+  header .container-fluid #imgProfile2,
+  .navbar .container-fluid #imgProfile2 {
+    width: 1.5em;
+    position: absolute;
+  }
+}
+
+#slider-1 .carousel-control-prev {
   width: 5%;
-  height: 95%;
-  top: 2.5%;
+  height: 100%;
   background: -webkit-gradient(linear, right top, left top, color-stop(5%, transparent), color-stop(95%, black));
   background: linear-gradient(to left, transparent 5%, black 95%);
 }
 
-#slider-1 #carouselExampleControls .carousel-control-prev .carousel-control-prev-icon {
+#slider-1 .carousel-control-prev .carousel-control-prev-icon {
   width: 100%;
 }
 
-#slider-1 #carouselExampleControls .carousel-control-next {
+#slider-1 .carousel-control-next {
   width: 5%;
-  height: 90%;
-  top: 5%;
+  height: 100%;
   background: -webkit-gradient(linear, left top, right top, color-stop(5%, transparent), color-stop(95%, black));
   background: linear-gradient(to right, transparent 5%, black 95%);
 }
 
-#slider-1 #carouselExampleControls .carousel-control-next .carousel-control-next-icon {
+#slider-1 .carousel-control-next .carousel-control-next-icon {
   width: 100%;
 }
 
-#slider-1 #carouselExampleControls .d-block:hover {
+#slider-1 .d-block {
+  border-radius: 5px;
+}
+
+#slider-1 .d-block:hover {
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
 }

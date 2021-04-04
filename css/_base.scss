@@ -1,6 +1,6 @@
 body,
 html {
-    font-size: 99.5%;
+    font-size: 1.2em;
     line-height: 1.2;
     color: #fff;
     font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -23,6 +23,10 @@ li {
     font-size: 2em;
 }
 
+h2 {
+    font-size: 5em;
+}
+
 header,
 .navbar {
     background: linear-gradient(black, #141414);
@@ -31,22 +35,22 @@ header,
         padding-top: 0;
         padding-bottom: 0;
         #logo {
-            width: 75px;
+            width: 4em;
         }
         .navbar {
             background: transparent;
         }
         #search {
-            width: 1em;
+            width: 1.3em;
         }
         #jingle {
-            width: 1em;
+            width: 1.3em;
         }
         #gift {
-            width: 1em;
+            width: 1.3em;
         }
         #imgProfile {
-            width: 1em;
+            width: 1.6em;
         }
         #imgProfile2 {
             width: 1.5em;
@@ -56,7 +60,7 @@ header,
             .navbar-nav {
                 margin-left: -35vw;
                 .nav-link {
-                    font-size: 12px;
+                    font-size: 0.35em;
                     color: #fff;
                     &:hover {
                         opacity: 65%;
@@ -67,21 +71,46 @@ header,
     }
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (max-width: 575.98px) {
     header,
     .navbar {
         .container-fluid {
-            .navbar-nav {
-                margin-left: -35vw;
+            #logo {
+                width: 3em;
+            }
+            #imgProfile2 {
+                width: 1.3em;
+                position: absolute;
             }
             #search {
-                width: 0.7em;
+                width: 1em;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    header,
+    .navbar {
+        .container-fluid {
+            #navbarNav .navbar-nav {
+                margin-left: -40vw;
+            }
+            #search {
+                width: 1.1em;
             }
             #jingle {
-                width: 0.7em;
+                width: 1.1;
             }
             #gift {
-                width: 0.7em;
+                width: 1.1;
+            }
+            #imgProfile {
+                width: 1.6em;
+            }
+            #imgProfile2 {
+                width: 1.5em;
+                position: absolute;
             }
         }
     }

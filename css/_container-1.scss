@@ -1,26 +1,25 @@
 #slider-1 {
-    #carouselExampleControls {
-        .carousel-control-prev {
-            //AQUI FORMATA O TAMANHO DO BOTÃO DO CARROSSEL DE NEXT
-            width: 5%;
-            height: 95%;
-            top: 2.5%;
-            background: linear-gradient(to left, transparent 5%, black 95%);
-            .carousel-control-prev-icon {
-                width: 100%;
-            }
+    .carousel-control-prev {
+        //AQUI FORMATA O TAMANHO DO BOTÃO DO CARROSSEL DE NEXT
+        width: 5%;
+        height: 100%;
+        background: linear-gradient(to left, transparent 5%, black 95%);
+        .carousel-control-prev-icon {
+            width: 100%;
         }
-        .carousel-control-next {
-            //AQUI FORMATA O TAMANHO DO BOTÃO DO CARROSSEL DE NEXT
-            width: 5%;
-            height: 90%;
-            top: 5%;
-            background: linear-gradient(to right, transparent 5%, black 95%);
-            .carousel-control-next-icon {
-                width: 100%;
-            }
+    }
+    .carousel-control-next {
+        //AQUI FORMATA O TAMANHO DO BOTÃO DO CARROSSEL DE NEXT
+        width: 5%;
+        height: 100%;
+        background: linear-gradient(to right, transparent 5%, black 95%);
+        .carousel-control-next-icon {
+            width: 100%;
         }
-        .d-block:hover {
+    }
+    .d-block {
+        border-radius: 5px;
+        &:hover {
             //HOVER DENTRO DAS IMAGENS DO CARROSSEL
             transform: scale(1.1, 1.1);
         }
