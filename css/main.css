@@ -74,7 +74,7 @@ header .container-fluid #imgProfile2,
 
 header .container-fluid #navbarNav .navbar-nav,
 .navbar .container-fluid #navbarNav .navbar-nav {
-  margin-left: -35vw;
+  margin-left: 0vw;
 }
 
 header .container-fluid #navbarNav .navbar-nav .nav-link,
@@ -105,6 +105,34 @@ header .container-fluid #navbarNav .navbar-nav .nav-link:hover,
 }
 
 @media (min-width: 1200px) {
+  header .container-fluid #navbarNav .navbar-nav,
+  .navbar .container-fluid #navbarNav .navbar-nav {
+    margin-left: -40vw;
+  }
+  header .container-fluid #search,
+  .navbar .container-fluid #search {
+    width: 1.1em;
+  }
+  header .container-fluid #jingle,
+  .navbar .container-fluid #jingle {
+    width: 1.1;
+  }
+  header .container-fluid #gift,
+  .navbar .container-fluid #gift {
+    width: 1.1;
+  }
+  header .container-fluid #imgProfile,
+  .navbar .container-fluid #imgProfile {
+    width: 1.6em;
+  }
+  header .container-fluid #imgProfile2,
+  .navbar .container-fluid #imgProfile2 {
+    width: 1.5em;
+    position: absolute;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
   header .container-fluid #navbarNav .navbar-nav,
   .navbar .container-fluid #navbarNav .navbar-nav {
     margin-left: -40vw;
