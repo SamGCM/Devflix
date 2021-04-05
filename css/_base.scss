@@ -50,11 +50,9 @@ header,
         }
         #imgProfile2 {
             width: 1.5em;
-            position: absolute;
         }
         #navbarNav {
             .navbar-nav {
-                margin-left: 0vw;
                 .nav-link {
                     font-size: 0.35em;
                     color: #fff;
@@ -76,10 +74,6 @@ header,
             }
             #imgProfile2 {
                 width: 1.3em;
-                position: absolute;
-            }
-            #search {
-                width: 1em;
             }
         }
     }
@@ -89,9 +83,6 @@ header,
     header,
     .navbar {
         .container-fluid {
-            #navbarNav .navbar-nav {
-                margin-left: -40vw;
-            }
             #search {
                 width: 1.1em;
             }
@@ -106,7 +97,6 @@ header,
             }
             #imgProfile2 {
                 width: 1.5em;
-                position: absolute;
             }
         }
     }
@@ -116,9 +106,6 @@ header,
     header,
     .navbar {
         .container-fluid {
-            #navbarNav .navbar-nav {
-                margin-left: -40vw;
-            }
             #search {
                 width: 1.1em;
             }
@@ -133,7 +120,6 @@ header,
             }
             #imgProfile2 {
                 width: 1.5em;
-                position: absolute;
             }
         }
     }
