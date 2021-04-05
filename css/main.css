@@ -162,6 +162,7 @@ header .container-fluid #navbarNav .navbar-nav .nav-link:hover,
 }
 
 #slider-1 .d-block {
+  border: 1px solid transparent;
   border-radius: 5px;
 }
 

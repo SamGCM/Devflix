@@ -18,14 +18,11 @@
         }
     }
     .d-block {
+        border: 1px solid transparent;
         border-radius: 5px;
         &:hover {
             //HOVER DENTRO DAS IMAGENS DO CARROSSEL
             transform: scale(1.1, 1.1);
         }
     }
-}
-
-@media (min-width: 1200px) {
-    #slider-1 {}
 }
